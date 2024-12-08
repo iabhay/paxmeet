@@ -1,0 +1,62 @@
+/* Template Name: Enterly - Multipurpose NFT Marketplace Template
+   Author: Shreethemes
+   Email: support@shreethemes.in
+   Website: https://shreethemes.in
+   Version: 1.0.0
+   Created: July 2024
+   File Description: Main Css file for the DARK template
+*/
+
+/*********************************/
+/*         INDEX                 */
+/*================================
+ *     01.  Variables            *
+ *     02.  General              *
+ *     03.  Helper               *
+ *     04.  Bootstrap Custom     *
+ *     05.  Components           *
+ *     06.  Menu                 *
+ *     07.  Home / Landing       *
+ *     08.  Blog                 *
+ *     09.  Countdown            *
+ *     10.  Features             *
+ *     11.  Testimonial          *
+ *     12.  Team                 *
+ *     13.  Contact              *
+ *     14.  Footer               *
+ ================================*
+ 
+ *********************************
+ *        Dark SCSS               *
+ *********************************
+ *    01.  Variable Dark         *
+ *    02.  Bootstrap Custom Dark *
+ *    03.  Components Dark       *
+ *    04.  General Dark          *
+ *    05.  Helper Dark           *
+ *    06.  Menu Dark             *
+ ================================*/
+
+@import "variables";
+@import "general";
+@import "helper";
+@import "bootstrap-custom";
+@import "components";
+@import "menu";
+@import "home";
+@import "blog";
+@import "countdown";
+@import "features";
+@import "testi";
+@import "team";
+@import "contact";
+@import "footer";
+
+//Dark 
+@import "dark/variables";
+@import "dark/bootstrap-custom";
+@import "dark/components";
+@import "dark/general";
+@import "dark/helper";
+@import "dark/menu";
+@import "dark/custom";

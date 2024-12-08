@@ -1,0 +1,46 @@
+<header id="topnav" class="defaultscroll sticky" [ngClass]="scroll ? 'nav-sticky' : '' ">
+    <div class="container">
+        <a class="logo" [routerLink]="'/'">
+            <img [src]="'assets/images/logo-dark.png'" class="logo-light-mode" alt="">
+            <img [src]="'assets/images/logo-white.png'" class="logo-dark-mode" alt="">
+        </a>
+
+        <div class="menu-extras">
+            <div class="menu-item">
+                <a class="navbar-toggle" [ngClass]="toggle ? 'open' : ''" id="isToggle" (click)="toggleMenu($event)">
+                    <div class="lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <app-nav-setting [navDark]="true"/>
+
+        <div id="navigation" [ngClass]="toggle ? 'd-block' : 'd-none'">
+            <!-- Navigation Menu-->   
+            <ul class="navigation-menu nav-left" id="navmenu-nav">
+                <li class="has-submenu" [ngClass]="activeSection === 'home' ? 'active' : ''">
+                    <a href="#"  (click)="scrollToSection('home', $event)">Home</a>
+                </li>
+                <li class="has-submenu" [ngClass]="activeSection === 'explore' ? 'active' : ''">
+                    <a href="#" (click)="scrollToSection('explore', $event)">Nft Explore</a>
+                </li>
+                <li class="has-submenu" [ngClass]="activeSection === 'collection' ? 'active' : ''">
+                    <a href="#" (click)="scrollToSection('collection', $event)">Collection</a>
+                </li>
+                <li class="has-submenu" [ngClass]="activeSection === 'creators' ? 'active' : ''">
+                    <a href="#" (click)="scrollToSection('creators', $event)">Creators</a>
+                </li>
+                <li class="has-submenu" [ngClass]="activeSection === 'blogs' ? 'active' : ''">
+                    <a href="#" (click)="scrollToSection('blogs', $event)">Blogs</a>
+                </li>
+                <li class="has-submenu" [ngClass]="activeSection === 'contactus' ? 'active' : ''">
+                    <a href="#" (click)="scrollToSection('contactus', $event)">Contact Us</a>
+                </li>
+            </ul><!--end navigation menu-->
+        </div><!--end navigation-->
+    </div>
+</header>

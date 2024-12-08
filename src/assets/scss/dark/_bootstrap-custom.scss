@@ -1,0 +1,100 @@
+//
+// Bootstrap-custom.scss
+//
+@each $heading,
+$size in $heading-font-sizes {
+    #{$heading}, .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $heading,
+$size in $display-font-sizes {
+    .#{$heading} {
+        font-size: $size !important;
+    }
+}
+
+@each $name,
+$value in $colors {
+    .bg-#{$name} {
+        background-color: #{$value} !important;
+    }
+    .bg-soft-#{$name} {
+        background-color: rgba($value, 0.05) !important;
+        color: #{$value} !important;
+    }
+    .text-#{$name} {
+        color: #{$value} !important;
+    }
+    a {
+        &.text-#{$name} {
+            &:hover,
+            &:focus {
+                color: darken($value, 5%) !important;
+            }
+        }
+    }
+}
+
+a {
+    &.link-title {
+        &:hover,
+        &:focus {
+            color: $primary !important;
+        }
+    }
+}
+
+//Card
+.card {
+    background: $white;
+    color: $dark;
+    .card-body {
+        color: $dark;
+    }
+}
+
+//Border
+@each $name,
+$value in $colors {
+    .border-#{$name} {
+        border-color: #{$value} !important;
+    }
+}
+
+.border {
+    border-color: $gray-200 !important;
+}
+.border-top {
+    border-top-color: $gray-200!important;
+}
+.border-bottom {
+    border-bottom-color: $gray-200 !important;    
+}
+.border-left {
+    border-left-color: $gray-200 !important;    
+}
+.border-right {
+    border-right-color: $gray-200 !important;    
+}
+
+.img-thumbnail {
+    background-color: $light;
+    border-color: $light;
+}
+
+//modal
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background-color: $white !important;
+            .modal-header {
+                border-color: $gray-200 !important;
+            }
+            .modal-footer {
+                border-color: $gray-200 !important;
+            }
+        }
+    }
+}

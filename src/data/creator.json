@@ -1,0 +1,49 @@
+[
+    {
+        "id":1,
+        "image":"assets/images/team/1.jpg",
+        "name":"Steven Townsend",
+        "title":"@StreetBoy"
+    },
+    {
+        "id":2,
+        "image":"assets/images/team/2.jpg",
+        "name":"Tiffany Betancourt",
+        "title":"@CutieGirl"
+    },
+    {
+        "id":3,
+        "image":"assets/images/team/3.jpg",
+        "name":"Mari Harrington",
+        "title":"@NorseQueen"
+    },
+    {
+        "id":4,
+        "image":"assets/images/team/4.jpg",
+        "name":"Floyd Glasgow",
+        "title":"@BigBull"
+    },
+    {   "id":5,
+        "image":"assets/images/team/5.jpg",
+        "name":"Donna Schultz",
+        "title":"@Angel"
+    },
+    {  
+        "id":6,
+        "image":"assets/images/team/6.jpg",
+        "name":"Joshua Morris",
+        "title":"@CrazyAnyone"
+    },
+    {
+        "id":7,
+        "image":"assets/images/team/7.jpg",
+        "name":"Carl Williams",
+        "title":"@LooserBad"
+    },
+    {
+        "id":8,
+        "image":"assets/images/team/8.jpg",
+        "name":"Eugene Green",
+        "title":"@KristyHoney"
+    }
+]
