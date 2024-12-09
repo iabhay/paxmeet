@@ -1,8 +1,8 @@
 <header id="topnav" class="defaultscroll sticky" [ngClass]="scroll ? 'nav-sticky' : '' ">
     <div class="container">
         <a class="logo" [routerLink]="'/'">
-            <img [src]="'assets/images/logo-dark.png'" class="logo-light-mode" alt="">
-            <img [src]="'assets/images/logo-white.png'" class="logo-dark-mode" alt="">
+            <img [height]="'50px'" [src]="'assets/images/Lucna_logo.png'" class="logo-light-mode" alt="">
+            <img [height]="'50px'" [src]="'assets/images/Lucna_logo.png'" class="logo-dark-mode" alt="">
         </a>
 
         <div class="menu-extras">
@@ -26,7 +26,7 @@
                     <a href="#"  (click)="scrollToSection('home', $event)">Home</a>
                 </li>
                 <li class="has-submenu" [ngClass]="activeSection === 'explore' ? 'active' : ''">
-                    <a href="#" (click)="scrollToSection('explore', $event)">Nft Explore</a>
+                    <a href="#" (click)="scrollToSection('explore', $event)">Agents Explore</a>
                 </li>
                 <li class="has-submenu" [ngClass]="activeSection === 'collection' ? 'active' : ''">
                     <a href="#" (click)="scrollToSection('collection', $event)">Collection</a>

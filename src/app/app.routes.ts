@@ -31,7 +31,7 @@ import { CreatorProfileComponent } from './pages/nft/creator-profile/creator-pro
 import { ProfileSettingComponent } from './pages/nft/profile-setting/profile-setting.component';
 
 export const routes: Routes = [
-    {path:'', component:IndexComponent},
+    {path:'', redirectTo: 'onepage', pathMatch: 'full'},
     {path:'onepage', component:OnepageComponent},
     {path:'aboutus', component:AboutusComponent},
     {path:'services', component:ServicesComponent},

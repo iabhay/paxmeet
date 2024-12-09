@@ -3,7 +3,7 @@ import { NavbarComponent } from '../../../components/navbar/navbar.component';
 import { ScrollToTopComponent } from '../../../components/scroll-to-top/scroll-to-top.component';
 import { FooterComponent } from '../../../components/footer/footer.component';
 
-import NftData from '../../../../data/nft.json'
+import AgentsData from '../../../../data/agents.json'
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -21,5 +21,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './collection.component.scss'
 })
 export class CollectionComponent {
-  nftData = NftData;
+  AgentsData = AgentsData;
 }

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NavbarComponent } from '../../../components/navbar/navbar.component';
 
-import NftData from '../../../../data/nft.json'
+import AgentsData from '../../../../data/agents.json'
 import { FooterComponent } from "../../../components/footer/footer.component";
 import { ScrollToTopComponent } from "../../../components/scroll-to-top/scroll-to-top.component";
 @Component({
@@ -20,5 +20,5 @@ import { ScrollToTopComponent } from "../../../components/scroll-to-top/scroll-t
   styleUrl: './nft-explore.component.scss'
 })
 export class NftExploreComponent {
-  nftData = NftData;
+  AgentsData = AgentsData;
 }

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'enterly' title`, () => {
+  it(`should have the 'lucna.ai' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('enterly');
+    expect(app.title).toEqual('lucna.ai');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, enterly');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, lucna.ai');
   });
 });

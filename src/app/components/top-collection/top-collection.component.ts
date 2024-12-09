@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import NftData from '../../../data/nft.json'
+import AgentsData from '../../../data/agents.json'
 
 @Component({
   selector: 'app-top-collection',
@@ -15,5 +15,5 @@ import NftData from '../../../data/nft.json'
   styleUrl: './top-collection.component.scss'
 })
 export class TopCollectionComponent {
-  nftData = NftData
+  AgentsData = AgentsData
 }

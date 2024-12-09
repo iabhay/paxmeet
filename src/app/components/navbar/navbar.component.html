@@ -2,17 +2,17 @@
     <div class="container">
         <ng-container *ngIf="navDark; else elseTemplate">
             <a class="logo" [routerLink]="'/'">
-                <img [src]="'assets/images/logo-dark.png'" class="logo-light-mode" alt="">
-                <img [src]="'assets/images/logo-white.png'" class="logo-dark-mode" alt="">
+                <img height="50px" [src]="'assets/images/Lucna_logo.png'" class="logo-light-mode" alt="">
+                <img height="50px" [src]="'assets/images/Lucna_logo.png'" class="logo-dark-mode" alt="">
             </a>
         </ng-container>
         <ng-template #elseTemplate>
             <a class="logo" [routerLink]="'/'">
                 <span class="logo-light-mode">
-                    <img [src]="'assets/images/logo-dark.png'" class="l-dark" alt="">
-                    <img [src]="'assets/images/logo-white.png'" class="l-light" alt="">
+                    <img height="50px" [src]="'assets/images/Lucna_logo.png'" class="l-dark" alt="">
+                    <img height="50px" [src]="'assets/images/Lucna_logo.png'" class="l-light" alt="">
                 </span>
-                <img [src]="'assets/images/logo-white.png'" class="logo-dark-mode" alt="">
+                <img [height]="'50px'" [src]="'assets/images/Lucna_logo.png'" class="logo-dark-mode" alt="">
             </a>
         </ng-template>
 

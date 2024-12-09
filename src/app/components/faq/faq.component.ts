@@ -19,7 +19,7 @@ export class FaqComponent {
     },
     {
       id:2,
-      title:'Do I need a designer to use Enterly ?',
+      title:'Do I need a designer to use lucna.ai ?',
       desc:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
     },
     {

@@ -17,7 +17,7 @@
             <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <div class="position-relative">
                     <div class="tiny-single-item">
-                        <div *ngFor="let item of nftData | slice:6:9" class="tiny-slide">
+                        <div *ngFor="let item of AgentsData | slice:6:9" class="tiny-slide">
                             <div class="m-2">
                                 <div class="nft-item p-4 rounded shadow bg-white">
                                     <div class="position-relative">
@@ -25,8 +25,8 @@
                                             <img [src]="item.image" class="img-fluid" alt="">
                                             <div class="bg-overlay bg-black"></div>
                                             <div class="bid-button position-absolute top-50 translate-y-middle start-0 end-0 text-center">
-                                                <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary me-1"><i data-feather="shopping-cart" class="fea icon-sm align-middle me-1"></i> Buy Now</a>
-                                                <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary"><i data-feather="zap" class="fea icon-sm align-middle me-1"></i> Bid Now</a>
+                                                <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary me-1"><i data-feather="zap" class="fea icon-sm align-middle me-1"></i> Explore Now</a>
+                                                <!-- <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary"><i data-feather="zap" class="fea icon-sm align-middle me-1"></i> Bid Now</a> -->
                                             </div>
                                         </div>
 
@@ -39,8 +39,8 @@
                                         <a [routerLink]="['/nft-detail', item.id]" class="text-dark link-title h6">{{item.title}}</a>
 
                                         <div class="d-flex justify-content-between mt-2">
-                                            <span class="rate text-primary">20.5 ETH</span>
-                                            <span class="text-dark">1 out of 12 items</span>
+                                            <!-- <span class="rate text-primary">Use</span> -->
+                                            <span class="text-dark" style="opacity: 0.7;">{{item.subtitle}}</span>
                                         </div>
                                     </div>
                                 </div>

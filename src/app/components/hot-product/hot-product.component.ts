@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import NftData from '../../../data/nft.json'
+import AgentsData from '../../../data/agents.json'
 
 import * as bootstrap from 'bootstrap';
 
@@ -18,7 +18,7 @@ import * as bootstrap from 'bootstrap';
   styleUrl: './hot-product.component.scss'
 })
 export class HotProductComponent {
-  nftData = NftData;
+  AgentsData = AgentsData;
 
   // ngAfterViewInit() {
   //   // Select all elements with data-bs-toggle="tooltip" and initialize them

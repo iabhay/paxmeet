@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-import NftData from '../../../data/nft.json'
+import AgentsData from '../../../data/agents.json'
 import { tns } from 'tiny-slider';
 
 @Component({
@@ -16,7 +16,7 @@ import { tns } from 'tiny-slider';
   styleUrl: './home-banner.component.scss'
 })
 export class HomeBannerComponent {
-nftData = NftData
+AgentsData = AgentsData
 
 slider:any
 

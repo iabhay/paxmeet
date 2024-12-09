@@ -5,7 +5,7 @@ import { NavbarComponent } from '../../../components/navbar/navbar.component';
 import { FooterComponent } from '../../../components/footer/footer.component';
 import { ScrollToTopComponent } from '../../../components/scroll-to-top/scroll-to-top.component';
 
-import NftData from '../../../../data/nft.json'
+import AgentsData from '../../../../data/agents.json'
 
 @Component({
   selector: 'app-nft-detail',
@@ -21,11 +21,11 @@ import NftData from '../../../../data/nft.json'
   styleUrl: './nft-detail.component.scss'
 })
 export class NftDetailComponent {
-  nftData = NftData;
+  AgentsData = AgentsData;
  id:any
  data:any
  constructor(private route: ActivatedRoute) { 
   this.id = route.snapshot.params['id']
-  this.data = this.nftData.find((item) => item.id === parseInt(this.id))
+  this.data = this.AgentsData.find((item) => item.id === parseInt(this.id))
  }
 }
