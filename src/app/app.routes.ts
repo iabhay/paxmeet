@@ -29,10 +29,16 @@ import { UploadItemComponent } from './pages/nft/upload-item/upload-item.compone
 import { CreatorsComponent } from './pages/nft/creators/creators.component';
 import { CreatorProfileComponent } from './pages/nft/creator-profile/creator-profile.component';
 import { ProfileSettingComponent } from './pages/nft/profile-setting/profile-setting.component';
+import { ExploreEventsComponent } from './components/explore-events/explore-events.component';
+import { TopCollectionComponent } from './components/top-collection/top-collection.component';
+import { AddEventComponent } from './components/add-event/add-event.component';
 
 export const routes: Routes = [
-    {path:'', redirectTo: 'onepage', pathMatch: 'full'},
-    {path:'onepage', component:OnepageComponent},
+    {path:'', redirectTo:'home', pathMatch: 'full'},
+    {path:'home', component:OnepageComponent},
+    {path:'spotlight', component:TopCollectionComponent},
+    {path:'explore', component:ExploreEventsComponent},
+    {path:'create',component:AddEventComponent},
     {path:'aboutus', component:AboutusComponent},
     {path:'services', component:ServicesComponent},
     {path:'service-detail', component:ServiceDetailComponent},

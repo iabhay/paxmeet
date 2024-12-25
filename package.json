@@ -1,7 +1,7 @@
 {
-  "name": "enterly",
+  "name": "paxmeet",
   "version": "1.0.0",
-  "description": "Enterly - Angular 18 Multipurpose NFT Marketplace Template",
+  "description": "Paxmeet - Events",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,6 +24,9 @@
     "enterly": "file:",
     "feather-icons": "^4.29.2",
     "ngx-countup": "^13.2.0",
+    "paxmeet": "file:",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.16.0",
     "rxjs": "~7.8.0",
     "tiny-slider": "^2.9.4",
     "tslib": "^2.3.0",

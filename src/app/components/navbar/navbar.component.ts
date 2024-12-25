@@ -45,7 +45,7 @@ export class NavbarComponent {
 
   scroll:boolean = false
 
-  @HostListener('window:scroll',[])
+  // @HostListener('window:scroll',[])
 
   scrollHandler(){
     if(window.scrollY > 50){
@@ -53,6 +53,6 @@ export class NavbarComponent {
     }else{
       this.scroll = false
     }
-    
+
   }
 }

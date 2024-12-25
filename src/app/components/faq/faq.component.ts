@@ -19,7 +19,7 @@ export class FaqComponent {
     },
     {
       id:2,
-      title:'Do I need a designer to use lucna.ai ?',
+      title:'Do I need a designer to use paxmeet ?',
       desc:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
     },
     {
@@ -34,7 +34,7 @@ export class FaqComponent {
     },
   ]
 
-  activeTab:number = 1 
+  activeTab:number = 1
 
   onTabClick(e:any,index:number){
     e.preventDefault();

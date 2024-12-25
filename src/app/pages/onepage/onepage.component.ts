@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener  } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild  } from '@angular/core';
 import { RouterLink } from '@angular/router';
+
 import { SingleNavbarComponent } from '../../components/single-navbar/single-navbar.component';
 import { ServicesComponent } from '../../components/services/services.component';
+import { AddEventComponent } from '../../components/add-event/add-event.component';
 import { AboutOneComponent } from '../../components/about-one/about-one.component';
 import { AboutTwoComponent } from '../../components/about-two/about-two.component';
 import { PriceComponent } from '../../components/price/price.component';
@@ -18,16 +20,19 @@ import { TopCollectionComponent } from "../../components/top-collection/top-coll
 import { FaqComponent } from "../../components/faq/faq.component";
 
 import CreatorData from '../../../data/creator.json'
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-onepage',
   standalone: true,
   imports: [
     CommonModule,
+    FormsModule,
     RouterLink,
     SingleNavbarComponent,
     ServicesComponent,
     AboutOneComponent,
+    AddEventComponent,
     AboutTwoComponent,
     PriceComponent,
     ClientComponent,
@@ -45,26 +50,6 @@ import CreatorData from '../../../data/creator.json'
   styleUrl: './onepage.component.scss'
 })
 export class OnepageComponent {
-
   creatorData = CreatorData
-  
-  activeSection: string = 'home';
-
-  @HostListener('window:scroll', ['$event'])
-
-  onWindowScroll() {
-    const sections = document.querySelectorAll('.section');
-    
-    let currentSection: string = 'home';
-
-    sections.forEach(section => {
-      const sectionTop = section.getBoundingClientRect().top;
-      if (sectionTop <= 100) { 
-        currentSection = section.id;
-      }
-    });
-    
-    this.activeSection = currentSection;
-  }
 
 }

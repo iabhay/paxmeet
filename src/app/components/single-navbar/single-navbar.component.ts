@@ -21,14 +21,14 @@ export class SingleNavbarComponent {
     feather.replace()
   }
 
-  toggle:boolean = false
+  toggle:boolean = true;
 
   toggleMenu(e:any){
     e.preventDefault();
     this.toggle = !this.toggle;
   }
 
-  scroll:boolean = false
+  scroll:boolean = true;
 
   @HostListener('window:scroll',[])
 

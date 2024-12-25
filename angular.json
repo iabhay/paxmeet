@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "enterly": {
+    "paxmeet": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/enterly",
+            "outputPath": "dist/paxmeet",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -34,6 +34,8 @@
               }
             ],
             "styles": [
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
               "./node_modules/bootstrap/scss/bootstrap.scss",
               "src/assets/scss/style-dark.scss",
               "src/assets/css/materialdesignicons.min.css"
@@ -68,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "enterly:build:production"
+              "buildTarget": "paxmeet:build:production"
             },
             "development": {
-              "buildTarget": "enterly:build:development"
+              "buildTarget": "paxmeet:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,9 +99,11 @@
               }
             ],
             "styles": [
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
                "./node_modules/bootstrap/scss/bootstrap.scss",
               "src/assets/scss/style-dark.scss",
-              "src/assets/css/materialdesignicons.min.css"
+              "src/assets/css/materialdesignicons.min.scss"
             ],
             "scripts": []
           }

@@ -15,12 +15,12 @@ import { RouterLink } from '@angular/router';
 export class CtaTwoComponent {
   data = [
     {
-      title:'Join our community: lucna.ai',
+      title:'Join our community: ',
       desc:'Welcome to the future, you can buy and sell awesome artworks form here.',
       image:'assets/images/community.png'
     },
     {
-      title:'Learn more about us: lucna.ai',
+      title:'Learn more about us: ',
       desc:'Welcome to the future, you can buy and sell awesome artworks form here.',
       image:'assets/images/united.png'
     },

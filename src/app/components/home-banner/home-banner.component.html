@@ -1,20 +1,20 @@
  <!-- Start Hero -->
  <section class="bg-half-170 overflow-hidden" id="home">
-    <span class="modern-app-round position-absolute top-50 start-50 translate-middle"></span>
+    <span class="modern-app-round position-absolute top-45 start-150 translate-middle"></span>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-7 col-md-6">
                 <div class="title-heading">
-                    <h1 class="heading mb-3">Discover and Utilize <span class="text-gradient-primary">extraordinary</span> AI <span class="text-gradient-primary">Agents</span></h1>
-                    <p class="para-desc text-muted">Welcome to the future, you can use awesome agents form here. The world largest digital marketplace for AI Agents.</p>
+                    <h1 class="heading mb-3"><span class="text-gradient-primary">Explore </span>and <span class="text-gradient-primary">Create</span><br><span class="text-gradient-primary">Events</span> Worldwide</h1>
+                    <p class="para-desc text-muted">Meet People and Spend Time Together. Organize Events and Build Community.</p>
                     <div class="mt-4 pt-2">
-                        <a href="nft-explore.html" class="btn btn-primary me-1"><i class="mdi mdi-camera-outline align-middle"></i> Explore</a>
-                        <a href="" class="btn btn-soft-primary">Use <i class="mdi mdi-arrow-right align-middle"></i></a>
+                        <a [routerLink]="'/explore'" class="btn btn-primary me-1"><i class="mdi mdi-camera-outline align-middle"></i> Explore</a>
+                        <a [routerLink]="'/create'" class="btn btn-soft-primary">Create <i class="mdi mdi-arrow-right align-middle"></i></a>
                     </div>
                 </div>
             </div><!--end col-->
 
-            <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+            <div class="col-lg-3 col-md-0 mt-3 mt-sm-0 pt-2 pt-sm-0">
                 <div class="position-relative">
                     <div class="tiny-single-item">
                         <div *ngFor="let item of AgentsData | slice:6:9" class="tiny-slide">
@@ -25,8 +25,7 @@
                                             <img [src]="item.image" class="img-fluid" alt="">
                                             <div class="bg-overlay bg-black"></div>
                                             <div class="bid-button position-absolute top-50 translate-y-middle start-0 end-0 text-center">
-                                                <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary me-1"><i data-feather="zap" class="fea icon-sm align-middle me-1"></i> Explore Now</a>
-                                                <!-- <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary"><i data-feather="zap" class="fea icon-sm align-middle me-1"></i> Bid Now</a> -->
+                                                <a [routerLink]="['/nft-detail', item.id]" class="btn btn-sm btn-primary me-1"><i data-feather="zap" class="fea icon-sm align-middle me-1"></i> Explore</a>
                                             </div>
                                         </div>
 
@@ -39,7 +38,6 @@
                                         <a [routerLink]="['/nft-detail', item.id]" class="text-dark link-title h6">{{item.title}}</a>
 
                                         <div class="d-flex justify-content-between mt-2">
-                                            <!-- <span class="rate text-primary">Use</span> -->
                                             <span class="text-dark" style="opacity: 0.7;">{{item.subtitle}}</span>
                                         </div>
                                     </div>

@@ -1,0 +1,127 @@
+:host ::ng-deep .btn-group{
+  width: 13vw;
+}
+
+:host ::ng-deep .btn-group:hover, .btn-post:hover{
+  box-shadow: 0 0 12px #05474c;
+}
+
+
+.btn-post{
+  background-color: #27354c !important;
+  color: white;
+  width: 10vw;
+  // font-family: 'Lato';
+  font-size: larger;
+  font-weight: 700;
+}
+
+:host ::ng-deep .p-calendar {
+  font-family: "Syne", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+/* Apply background color to the calendar input */
+:host ::ng-deep .p-calendar .p-inputtext, .p-inputtext:hover, .p-inputtext:focus {
+  background-color: #7c3aed !important;
+  color: white !important;
+  padding: 2px;
+  border-radius: 7px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+}
+
+/* Apply background color to the calendar overlay (date picker) */
+:host ::ng-deep .p-calendar .p-datepicker {
+  background-color: #27354c !important;
+  color: white !important;
+}
+
+/* Change button colors (optional) */
+:host ::ng-deep .p-calendar .p-datepicker .p-datepicker-header {
+  background-color: white !important;
+  color: white !important;
+}
+
+/* Style selected date */
+:host ::ng-deep .p-calendar .p-datepicker-calendar .p-highlight {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+.header-event{
+  height: 20%;
+  width: 80%;
+  position: relative;
+  display: flex;
+  // margin-left: 0;
+  margin: auto;
+  gap: 10px;
+}
+
+.container1{
+  background-color: white;
+  height: 80%;
+  width: 100%;
+  position: relative;
+  border-radius: 18px 18px 4px 4px;
+  box-shadow: 13px 13px 40px 13px rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+  // font-family: 'Lato';
+  position: relative;
+  height: 100%;
+  width: 100%;
+  resize:none;
+  overflow:auto;
+  border:0px;
+  outline:0px;
+  background-color:transparent;
+  padding: 10px;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  white-space: pre-line;
+  text-align: justify;
+  text-align-last: center;
+}
+
+:host ::ng-deep .dropdown-item, .dropdown-menu{
+  background-color: #27354c !important;
+  color: white;
+  text-align: center;
+}
+
+:host ::ng-deep .dropdown-item:hover{
+  background-color: #7c3aed !important;
+  cursor: pointer;
+}
+
+.containert {
+  display: flex;
+  height: 250px;
+  width: 80%;
+  background-color: #2f383e;
+  flex-direction: column;
+  border-radius: 18px;
+  position: block;
+  margin: auto;
+  margin-top: 1%;
+  padding: 0;
+  border: 2px solid #2f383e;
+}
+
+.container2{
+  height: 30%;
+  width: 100%;
+  position: relative;
+  border-radius: 0px 0px 18px 18px;
+  // background-color: #2f383e;
+  background-color: #7c3aed !important;
+  align-items: end;
+  justify-content: center;
+  text-align: right;
+  padding: 15px;
+}
